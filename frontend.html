@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <title>Cloud Forensics Investigation Tool</title>
 
@@ -268,6 +269,253 @@
 
   init();
 </script>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Forensics Tool - Progress Prototype</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: #222;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 28px;
+    }
+
+    .sub {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card p {
+      margin: 10px 0 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #f0f2f5;
+    }
+
+    .alert-item, .case-item {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 10px;
+      background: #fafafa;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-left: 8px;
+    }
+
+    .high {
+      background: #ffe2e2;
+      color: #b00020;
+    }
+
+    .critical {
+      background: #ffd6d6;
+      color: #8b0000;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Cloud Forensics Investigation Tool</h1>
+  <div class="sub">Progress Prototype (Backend-focused Milestone)</div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Total Logs</h3>
+      <p id="logCount">0</p>
+    </div>
+    <div class="card">
+      <h3>Detected Alerts</h3>
+      <p id="alertCount">0</p>
+    </div>
+    <div class="card">
+      <h3>Correlated Cases</h3>
+      <p id="caseCount">0</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Cloud Activity Logs</h2>
+    <div class="muted">Simulated cloud logs currently used for backend testing</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>User</th>
+          <th>Event</th>
+          <th>Severity</th>
+          <th>IP</th>
+        </tr>
+      </thead>
+      <tbody id="logsTable"></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Detected Alerts</h2>
+    <div class="muted">Rule-based suspicious activity detection</div>
+    <div id="alertsList"></div>
+  </div>
+
+  <div class="section">
+    <h2>Correlated Incident Cases</h2>
+    <div class="muted">Related suspicious events grouped into cases</div>
+    <div id="casesList"></div>
+  </div>
+
+  <script>
+    async function loadLogs() {
+      const res = await fetch('http://localhost:8080/api/logs');
+      const logs = await res.json();
+
+      document.getElementById('logCount').innerText = logs.length;
+
+      const table = document.getElementById('logsTable');
+      table.innerHTML = '';
+
+      logs.forEach(log => {
+        const row = `
+          <tr>
+            <td>${log.timestamp}</td>
+            <td>${log.user}</td>
+            <td>${log.eventType}</td>
+            <td>${log.severity}</td>
+            <td>${log.ip}</td>
+          </tr>
+        `;
+        table.innerHTML += row;
+      });
+    }
+
+    async function loadAlerts() {
+      const res = await fetch('http://localhost:8080/api/alerts');
+      const alerts = await res.json();
+
+      document.getElementById('alertCount').innerText = alerts.length;
+
+      const container = document.getElementById('alertsList');
+      container.innerHTML = '';
+
+      alerts.forEach(alert => {
+        const severityClass = alert.severity.toLowerCase() === 'critical' ? 'critical' : 'high';
+
+        const item = `
+          <div class="alert-item">
+            <strong>${alert.ruleName}</strong>
+            <span class="tag ${severityClass}">${alert.severity}</span>
+            <div class="muted">${alert.timestamp}</div>
+            <div>User: ${alert.user} | IP: ${alert.ip}</div>
+            <div>Event: ${alert.eventType}</div>
+            <div>${alert.description}</div>
+          </div>
+        `;
+        container.innerHTML += item;
+      });
+    }
+
+    async function loadCases() {
+      const res = await fetch('http://localhost:8080/api/cases');
+      const cases = await res.json();
+
+      document.getElementById('caseCount').innerText = cases.length;
+
+      const container = document.getElementById('casesList');
+      container.innerHTML = '';
+
+      cases.forEach(c => {
+        const item = `
+          <div class="case-item">
+            <strong>${c.caseId}</strong>
+            <span class="tag critical">${c.severity}</span>
+            <div class="muted">User: ${c.user} | IP: ${c.ip}</div>
+            <div>Linked Events: ${c.linkedEventCount}</div>
+            <div>${c.correlationReason}</div>
+          </div>
+        `;
+        container.innerHTML += item;
+      });
+    }
+
+    async function init() {
+      await loadLogs();
+      await loadAlerts();
+      await loadCases();
+    }
+
+    init();
+  </script>
+>>>>>>> fb3db1a16e488cb90ba61dd938f193f165a36e80
 
 </body>
 </html>
