@@ -67,23 +67,33 @@ public class DetectionRuleService {
     }
 
     private void addFailedLoginBurstAlert(List<LogEvent> logs, List<Alert> alerts) {
-        long failures = logs.stream()
+        // Group failed logins by user dynamically
+        Map<String, List<LogEvent>> failuresByUser = logs.stream()
                 .filter(log -> "ConsoleLogin".equals(log.getEventName()))
                 .filter(log -> "FAILURE".equalsIgnoreCase(log.getEventOutcome()))
-                .filter(log -> log.getUserIdentity() != null && "dev_user_04".equals(log.getUserIdentity().getUserName()))
-                .count();
+                .filter(log -> log.getUserIdentity() != null && log.getUserIdentity().getUserName() != null)
+                .collect(java.util.stream.Collectors.groupingBy(
+                        log -> log.getUserIdentity().getUserName()
+                ));
 
-        if (failures >= 3) {
-            alerts.add(new Alert(
-                    UUID.randomUUID().toString(),
-                    "2026-03-25T10:04:00",
-                    "Failed Login Burst",
-                    "HIGH",
-                    "dev_user_04",
-                    "203.0.113.45",
-                    "ConsoleLogin",
-                    "Multiple failed login attempts detected for the same user and source IP."
-            ));
+        for (Map.Entry<String, List<LogEvent>> entry : failuresByUser.entrySet()) {
+            List<LogEvent> userFailures = entry.getValue();
+            if (userFailures.size() >= 3) {
+                // Use the last failure event for timestamp and IP
+                LogEvent lastFailure = userFailures.get(userFailures.size() - 1);
+                alerts.add(new Alert(
+                        UUID.randomUUID().toString(),
+                        lastFailure.getEventTime(),
+                        "Failed Login Burst",
+                        "HIGH",
+                        entry.getKey(),
+                        lastFailure.getSourceIPAddress(),
+                        "ConsoleLogin",
+                        "Multiple failed login attempts (" + userFailures.size()
+                                + ") detected for user '" + entry.getKey()
+                                + "' from IP " + lastFailure.getSourceIPAddress() + "."
+                ));
+            }
         }
     }
 
@@ -110,22 +120,31 @@ public class DetectionRuleService {
     }
 
     private void addSuspiciousStorageAccessAlert(List<LogEvent> logs, List<Alert> alerts) {
-        long objectAccessCount = logs.stream()
+        // Group storage access by user dynamically
+        Map<String, List<LogEvent>> accessByUser = logs.stream()
                 .filter(log -> "GetObject".equals(log.getEventName()))
-                .filter(log -> log.getUserIdentity() != null && "dev_user_04".equals(log.getUserIdentity().getUserName()))
-                .count();
+                .filter(log -> log.getUserIdentity() != null && log.getUserIdentity().getUserName() != null)
+                .collect(java.util.stream.Collectors.groupingBy(
+                        log -> log.getUserIdentity().getUserName()
+                ));
 
-        if (objectAccessCount >= 3) {
-            alerts.add(new Alert(
-                    UUID.randomUUID().toString(),
-                    "2026-03-25T10:14:00",
-                    "Suspicious Storage Access",
-                    "CRITICAL",
-                    "dev_user_04",
-                    "203.0.113.45",
-                    "GetObject",
-                    "Repeated access to sensitive cloud storage objects detected in a short interval (Data Exfiltration)"
-            ));
+        for (Map.Entry<String, List<LogEvent>> entry : accessByUser.entrySet()) {
+            List<LogEvent> userAccesses = entry.getValue();
+            if (userAccesses.size() >= 3) {
+                LogEvent lastAccess = userAccesses.get(userAccesses.size() - 1);
+                alerts.add(new Alert(
+                        UUID.randomUUID().toString(),
+                        lastAccess.getEventTime(),
+                        "Suspicious Storage Access",
+                        "CRITICAL",
+                        entry.getKey(),
+                        lastAccess.getSourceIPAddress(),
+                        "GetObject",
+                        "Repeated access to cloud storage objects (" + userAccesses.size()
+                                + " objects) detected for user '" + entry.getKey()
+                                + "' — potential data exfiltration."
+                ));
+            }
         }
     }
 }
