@@ -1,6 +1,7 @@
 package com.cloudforensics.model;
 
 public class CloudResource {
+
     private String resourceName;
     private String resourceType;
 
@@ -11,16 +12,28 @@ public class CloudResource {
         this.resourceType = resourceType;
     }
 
+    /**
+     * Safe resource name (used in timeline)
+     */
     public String getResourceName() {
-        return resourceName;
+        if (resourceName != null && !resourceName.isEmpty()) {
+            return resourceName.trim();
+        }
+        return "UNKNOWN_RESOURCE";
     }
 
     public void setResourceName(String resourceName) {
         this.resourceName = resourceName;
     }
 
+    /**
+     * Safe resource type
+     */
     public String getResourceType() {
-        return resourceType;
+        if (resourceType != null && !resourceType.isEmpty()) {
+            return resourceType.trim();
+        }
+        return "UNKNOWN_TYPE";
     }
 
     public void setResourceType(String resourceType) {

@@ -147,4 +147,42 @@ public class DetectionRuleService {
             }
         }
     }
-}
+
+
+
+
+    // =========================
+// REQUIRED FOR TIMELINE
+// =========================
+
+public String getSeverity(LogEvent log) {
+    if (log.getSeverity() != null) {
+        return log.getSeverity();
+    }
+
+    // fallback if enrichLogs not called
+    String event = log.getEventName();
+
+    if (event == null) return "INFO";
+
+    if ("GetObject".equals(event)) return "CRITICAL";
+
+    if ("AttachUserPolicy".equals(event) ||
+        "PutUserPolicy".equals(event) ||
+        "CreateAccessKey".equals(event)) return "HIGH";
+
+    if ("ConsoleLogin".equals(event) &&
+        "FAILURE".equalsIgnoreCase(log.getEventOutcome())) return "MEDIUM";
+
+    return "INFO";
+}
+
+public boolean isSuspicious(LogEvent log) {
+
+    String severity = getSeverity(log);
+
+    return "MEDIUM".equals(severity) ||
+           "HIGH".equals(severity) ||
+           "CRITICAL".equals(severity);
+}
+}
