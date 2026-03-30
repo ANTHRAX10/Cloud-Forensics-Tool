@@ -1,6 +1,8 @@
 com\cloudforensics\controller\LogController.class
 com\cloudforensics\service\LogService.class
 com\cloudforensics\model\LogEvent.class
+com\cloudforensics\model\UserIdentity.class
+com\cloudforensics\util\CloudLogParser.class
 com\cloudforensics\service\DetectionRuleService.class
 com\cloudforensics\CloudForensicsApplication.class
 com\cloudforensics\service\CorrelationService.class
@@ -8,4 +10,6 @@ com\cloudforensics\model\IncidentCase.class
 com\cloudforensics\service\LogService$1.class
 com\cloudforensics\model\Alert.class
 com\cloudforensics\controller\CaseController.class
+com\cloudforensics\model\LogResponseDTO.class
 com\cloudforensics\controller\AlertController.class
+com\cloudforensics\model\CloudResource.class
