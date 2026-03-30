@@ -12,4 +12,5 @@ com\cloudforensics\model\Alert.class
 com\cloudforensics\controller\CaseController.class
 com\cloudforensics\model\LogResponseDTO.class
 com\cloudforensics\controller\AlertController.class
+com\cloudforensics\service\DetectionRuleService$DetectionContext.class
 com\cloudforensics\model\CloudResource.class
