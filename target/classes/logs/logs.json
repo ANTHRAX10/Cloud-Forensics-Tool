@@ -106,5 +106,44 @@
     "resource": "IAM Users",
     "ip": "192.0.2.5",
     "status": "SUCCESS"
+  },
+  {
+    "timestamp": "10:00",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "ConsoleLogin",
+    "status": "FAILURE"
+  },
+  {
+    "timestamp": "10:02",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "ConsoleLogin",
+    "status": "FAILURE"
+  },
+  {
+    "timestamp": "10:04",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "ConsoleLogin",
+    "status": "SUCCESS"
+  },
+  {
+    "timestamp": "10:06",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "AttachUserPolicy"
+  },
+  {
+    "timestamp": "10:08",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "ListBuckets"
+  },
+  {
+    "timestamp": "10:10",
+    "user": "dev_user_04",
+    "ip": "203.0.113.45",
+    "eventType": "GetObject"
   }
 ]
