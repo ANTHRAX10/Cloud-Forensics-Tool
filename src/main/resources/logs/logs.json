@@ -1,7 +1,6 @@
 [
   {
     "timestamp": "2026-03-25T10:00:00",
-    "severity": "LOW",
     "eventType": "ConsoleLogin",
     "user": "dev_user_04",
     "resource": "AWS Console",
@@ -10,7 +9,6 @@
   },
   {
     "timestamp": "2026-03-25T10:02:00",
-    "severity": "LOW",
     "eventType": "ConsoleLogin",
     "user": "dev_user_04",
     "resource": "AWS Console",
@@ -19,7 +17,6 @@
   },
   {
     "timestamp": "2026-03-25T10:04:00",
-    "severity": "LOW",
     "eventType": "ConsoleLogin",
     "user": "dev_user_04",
     "resource": "AWS Console",
@@ -28,7 +25,6 @@
   },
   {
     "timestamp": "2026-03-25T10:06:00",
-    "severity": "MEDIUM",
     "eventType": "ConsoleLogin",
     "user": "dev_user_04",
     "resource": "AWS Console",
@@ -37,7 +33,6 @@
   },
   {
     "timestamp": "2026-03-25T10:08:00",
-    "severity": "HIGH",
     "eventType": "AttachUserPolicy",
     "user": "dev_user_04",
     "resource": "IAM Policy",
@@ -46,7 +41,6 @@
   },
   {
     "timestamp": "2026-03-25T10:10:00",
-    "severity": "MEDIUM",
     "eventType": "ListBuckets",
     "user": "dev_user_04",
     "resource": "S3 Buckets",
@@ -55,7 +49,6 @@
   },
   {
     "timestamp": "2026-03-25T10:12:00",
-    "severity": "HIGH",
     "eventType": "GetObject",
     "user": "dev_user_04",
     "resource": "s3://finance-reports/Q1.xlsx",
@@ -64,7 +57,6 @@
   },
   {
     "timestamp": "2026-03-25T10:13:00",
-    "severity": "HIGH",
     "eventType": "GetObject",
     "user": "dev_user_04",
     "resource": "s3://finance-reports/Q2.xlsx",
@@ -73,7 +65,6 @@
   },
   {
     "timestamp": "2026-03-25T10:14:00",
-    "severity": "HIGH",
     "eventType": "GetObject",
     "user": "dev_user_04",
     "resource": "s3://finance-reports/Q3.xlsx",
@@ -82,7 +73,6 @@
   },
   {
     "timestamp": "2026-03-25T11:00:00",
-    "severity": "LOW",
     "eventType": "ConsoleLogin",
     "user": "ops_user_02",
     "resource": "AWS Console",
@@ -91,7 +81,6 @@
   },
   {
     "timestamp": "2026-03-25T11:05:00",
-    "severity": "LOW",
     "eventType": "DescribeInstances",
     "user": "ops_user_02",
     "resource": "EC2 Instances",
@@ -100,7 +89,6 @@
   },
   {
     "timestamp": "2026-03-25T11:10:00",
-    "severity": "LOW",
     "eventType": "ListUsers",
     "user": "admin_user_01",
     "resource": "IAM Users",

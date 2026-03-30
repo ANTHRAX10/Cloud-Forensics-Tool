@@ -1,12 +1,13 @@
 package com.cloudforensics.controller;
 
-import com.cloudforensics.model.LogEvent;
+import com.cloudforensics.model.LogResponseDTO;
 import com.cloudforensics.service.LogService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -19,7 +20,9 @@ public class LogController {
     }
 
     @GetMapping("/api/logs")
-    public List<LogEvent> getLogs() {
-        return logService.getAllLogs();
+    public List<LogResponseDTO> getLogs() {
+        return logService.getAllLogs().stream()
+                .map(LogResponseDTO::fromLogEvent)
+                .collect(Collectors.toList());
     }
 }

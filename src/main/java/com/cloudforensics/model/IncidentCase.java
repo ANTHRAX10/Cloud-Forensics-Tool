@@ -8,14 +8,14 @@ public class IncidentCase {
     private String ip;
     private String severity;
     private int linkedEventCount;
-    private List<LogEvent> relatedEvents;
+    private List<LogResponseDTO> relatedEvents;
     private String correlationReason;
 
     public IncidentCase() {
     }
 
     public IncidentCase(String caseId, String user, String ip, String severity,
-                        int linkedEventCount, List<LogEvent> relatedEvents, String correlationReason) {
+                        int linkedEventCount, List<LogResponseDTO> relatedEvents, String correlationReason) {
         this.caseId = caseId;
         this.user = user;
         this.ip = ip;
@@ -45,7 +45,7 @@ public class IncidentCase {
         return linkedEventCount;
     }
 
-    public List<LogEvent> getRelatedEvents() {
+    public List<LogResponseDTO> getRelatedEvents() {
         return relatedEvents;
     }
 

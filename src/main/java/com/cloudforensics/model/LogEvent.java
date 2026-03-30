@@ -1,81 +1,62 @@
 package com.cloudforensics.model;
 
 public class LogEvent {
-    private String timestamp;
+    private String eventTime;
+    private String eventName;
+    private UserIdentity userIdentity;
+    private String sourceIPAddress;
+    private CloudResource resource;
+    private String eventOutcome;
+    private String cloudProvider;
+    private String region;
+
+    // Enrichment fields (Populated by Detection Engine)
     private String severity;
-    private String eventType;
-    private String user;
-    private String resource;
-    private String ip;
-    private String status;
+    private String detectionReason;
 
     public LogEvent() {
     }
 
-    public LogEvent(String timestamp, String severity, String eventType, String user,
-                    String resource, String ip, String status) {
-        this.timestamp = timestamp;
-        this.severity = severity;
-        this.eventType = eventType;
-        this.user = user;
+    public LogEvent(String eventTime, String eventName, UserIdentity userIdentity,
+                    String sourceIPAddress, CloudResource resource, String eventOutcome,
+                    String cloudProvider, String region) {
+        this.eventTime = eventTime;
+        this.eventName = eventName;
+        this.userIdentity = userIdentity;
+        this.sourceIPAddress = sourceIPAddress;
         this.resource = resource;
-        this.ip = ip;
-        this.status = status;
+        this.eventOutcome = eventOutcome;
+        this.cloudProvider = cloudProvider;
+        this.region = region;
     }
 
-    public String getTimestamp() {
-        return timestamp;
-    }
+    public String getEventTime() { return eventTime; }
+    public void setEventTime(String eventTime) { this.eventTime = eventTime; }
 
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
-    }
+    public String getEventName() { return eventName; }
+    public void setEventName(String eventName) { this.eventName = eventName; }
 
-    public String getSeverity() {
-        return severity;
-    }
+    public UserIdentity getUserIdentity() { return userIdentity; }
+    public void setUserIdentity(UserIdentity userIdentity) { this.userIdentity = userIdentity; }
 
-    public void setSeverity(String severity) {
-        this.severity = severity;
-    }
+    public String getSourceIPAddress() { return sourceIPAddress; }
+    public void setSourceIPAddress(String sourceIPAddress) { this.sourceIPAddress = sourceIPAddress; }
 
-    public String getEventType() {
-        return eventType;
-    }
+    public CloudResource getResource() { return resource; }
+    public void setResource(CloudResource resource) { this.resource = resource; }
 
-    public void setEventType(String eventType) {
-        this.eventType = eventType;
-    }
+    public String getEventOutcome() { return eventOutcome; }
+    public void setEventOutcome(String eventOutcome) { this.eventOutcome = eventOutcome; }
 
-    public String getUser() {
-        return user;
-    }
+    public String getCloudProvider() { return cloudProvider; }
+    public void setCloudProvider(String cloudProvider) { this.cloudProvider = cloudProvider; }
 
-    public void setUser(String user) {
-        this.user = user;
-    }
+    public String getRegion() { return region; }
+    public void setRegion(String region) { this.region = region; }
 
-    public String getResource() {
-        return resource;
-    }
+    public String getSeverity() { return severity; }
+    public void setSeverity(String severity) { this.severity = severity; }
 
-    public void setResource(String resource) {
-        this.resource = resource;
-    }
-
-    public String getIp() {
-        return ip;
-    }
-
-    public void setIp(String ip) {
-        this.ip = ip;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
+    public String getDetectionReason() { return detectionReason; }
+    public void setDetectionReason(String detectionReason) { this.detectionReason = detectionReason; }
 }
