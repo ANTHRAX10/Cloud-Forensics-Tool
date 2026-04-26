@@ -1,241 +1,4692 @@
 [
   {
-    "timestamp": "2026-03-25T10:00:00",
-    "eventType": "ConsoleLogin",
-    "user": "dev_user_04",
-    "resource": "AWS Console",
-    "ip": "203.0.113.45",
-    "status": "FAILURE"
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T08:00:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:02:00",
-    "eventType": "ConsoleLogin",
-    "user": "dev_user_04",
-    "resource": "AWS Console",
-    "ip": "203.0.113.45",
-    "status": "FAILURE"
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T08:01:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:04:00",
-    "eventType": "ConsoleLogin",
-    "user": "dev_user_04",
-    "resource": "AWS Console",
-    "ip": "203.0.113.45",
-    "status": "FAILURE"
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T08:02:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:06:00",
-    "eventType": "ConsoleLogin",
-    "user": "dev_user_04",
-    "resource": "AWS Console",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T08:03:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:08:00",
-    "eventType": "AttachUserPolicy",
-    "user": "dev_user_04",
-    "resource": "IAM Policy",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T08:04:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:10:00",
-    "eventType": "ListBuckets",
-    "user": "dev_user_04",
-    "resource": "S3 Buckets",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T08:05:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:12:00",
-    "eventType": "GetObject",
-    "user": "dev_user_04",
-    "resource": "s3://finance-reports/Q1.xlsx",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T08:06:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:13:00",
-    "eventType": "GetObject",
-    "user": "dev_user_04",
-    "resource": "s3://finance-reports/Q2.xlsx",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T08:07:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T10:14:00",
-    "eventType": "GetObject",
-    "user": "dev_user_04",
-    "resource": "s3://finance-reports/Q3.xlsx",
-    "ip": "203.0.113.45",
-    "status": "SUCCESS"
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T08:08:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T11:00:00",
-    "eventType": "ConsoleLogin",
-    "user": "ops_user_02",
-    "resource": "AWS Console",
-    "ip": "198.51.100.10",
-    "status": "SUCCESS"
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T08:09:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T11:05:00",
-    "eventType": "DescribeInstances",
-    "user": "ops_user_02",
-    "resource": "EC2 Instances",
-    "ip": "198.51.100.10",
-    "status": "SUCCESS"
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T08:10:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "2026-03-25T11:10:00",
-    "eventType": "ListUsers",
-    "user": "admin_user_01",
-    "resource": "IAM Users",
-    "ip": "192.0.2.5",
-    "status": "SUCCESS"
+    "eventName": "DescribeImages",
+    "eventTime": "2026-04-26T08:11:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "10:00",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "ConsoleLogin",
-    "status": "FAILURE"
+    "eventName": "ListQueues",
+    "eventTime": "2026-04-26T08:12:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "10:02",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "ConsoleLogin",
-    "status": "FAILURE"
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T08:13:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "10:04",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "ConsoleLogin",
-    "status": "SUCCESS"
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T08:14:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
   },
   {
-    "timestamp": "10:06",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "AttachUserPolicy"
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T08:30:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
   },
   {
-    "timestamp": "10:08",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "ListBuckets"
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T08:31:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
   },
   {
-    "timestamp": "10:10",
-    "user": "dev_user_04",
-    "ip": "203.0.113.45",
-    "eventType": "GetObject"
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T08:32:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
   },
-    { "timestamp": "2024-01-15T01:17:00", "eventType": "ConsoleLogin", "user": "dev_user_03", "resource": "AWS Console", "ip": "203.0.113.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T01:19:22", "eventType": "DescribeInstances", "user": "dev_user_03", "resource": "ec2", "ip": "203.0.113.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T01:21:45", "eventType": "GetObject", "user": "dev_user_03", "resource": "s3://prod-backup/config.tar.gz", "ip": "203.0.113.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T02:44:10", "eventType": "ConsoleLogin", "user": "dev_user_05", "resource": "AWS Console", "ip": "192.168.4.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T02:46:33", "eventType": "ListBuckets", "user": "dev_user_05", "resource": "s3", "ip": "192.168.4.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:00:12", "eventType": "ConsoleLogin", "user": "dev_user_01", "resource": "AWS Console", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:01:30", "eventType": "DescribeInstances", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:02:55", "eventType": "ListBuckets", "user": "dev_user_02", "resource": "s3", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:04:10", "eventType": "ConsoleLogin", "user": "dev_user_02", "resource": "AWS Console", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:05:40", "eventType": "GetObject", "user": "dev_user_02", "resource": "s3://app-assets/readme.txt", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:07:15", "eventType": "PutObject", "user": "dev_user_02", "resource": "s3://app-assets/deploy.zip", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:09:00", "eventType": "ConsoleLogin", "user": "dev_user_04", "resource": "AWS Console", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:10:30", "eventType": "DescribeSecurityGroups", "user": "dev_user_04", "resource": "ec2", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:12:00", "eventType": "ListObjects", "user": "dev_user_04", "resource": "s3://logs-bucket", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:13:45", "eventType": "ConsoleLogin", "user": "admin_user", "resource": "AWS Console", "ip": "192.168.3.11", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:15:20", "eventType": "GetAccountSummary", "user": "admin_user", "resource": "iam", "ip": "192.168.3.11", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:17:00", "eventType": "DescribeVpcs", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:18:30", "eventType": "DescribeSubnets", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:20:00", "eventType": "GetBucketAcl", "user": "dev_user_02", "resource": "s3://app-assets", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:21:45", "eventType": "DescribeRouteTables", "user": "dev_user_04", "resource": "ec2", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:23:10", "eventType": "ConsoleLogin", "user": "dev_user_01", "resource": "AWS Console", "ip": "192.168.1.45", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:23:48", "eventType": "ConsoleLogin", "user": "dev_user_01", "resource": "AWS Console", "ip": "203.0.113.77", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:24:22", "eventType": "ConsoleLogin", "user": "dev_user_01", "resource": "AWS Console", "ip": "203.0.113.77", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:24:59", "eventType": "ConsoleLogin", "user": "dev_user_01", "resource": "AWS Console", "ip": "203.0.113.77", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:25:30", "eventType": "ConsoleLogin", "user": "dev_user_02", "resource": "AWS Console", "ip": "203.0.113.55", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:26:05", "eventType": "ConsoleLogin", "user": "dev_user_03", "resource": "AWS Console", "ip": "203.0.113.55", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:26:40", "eventType": "ConsoleLogin", "user": "dev_user_04", "resource": "AWS Console", "ip": "203.0.113.55", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:27:15", "eventType": "ConsoleLogin", "user": "dev_user_05", "resource": "AWS Console", "ip": "203.0.113.55", "status": "FAILURE" },
-    { "timestamp": "2024-01-15T08:28:00", "eventType": "ConsoleLogin", "user": "dev_user_02", "resource": "AWS Console", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:30:10", "eventType": "ConsoleLogin", "user": "dev_user_02", "resource": "AWS Console", "ip": "203.0.113.99", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:31:00", "eventType": "DescribeKeyPairs", "user": "dev_user_04", "resource": "ec2", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:32:30", "eventType": "PutBucketPolicy", "user": "dev_user_02", "resource": "s3://app-assets", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:34:00", "eventType": "CreateAccessKey", "user": "admin_user", "resource": "iam/admin_user", "ip": "192.168.3.11", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:36:45", "eventType": "DescribeInstances", "user": "admin_user", "resource": "ec2", "ip": "203.0.113.200", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:38:20", "eventType": "ListBuckets", "user": "admin_user", "resource": "s3", "ip": "203.0.113.200", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:40:00", "eventType": "GetObject", "user": "admin_user", "resource": "s3://prod-secrets/creds.json", "ip": "203.0.113.200", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:41:30", "eventType": "CreateUser", "user": "dev_user_05", "resource": "iam/svc_backdoor", "ip": "203.0.113.44", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:55:10", "eventType": "AttachUserPolicy", "user": "dev_user_05", "resource": "iam/svc_backdoor", "ip": "203.0.113.44", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:30:05", "eventType": "CreateAccessKey", "user": "dev_user_05", "resource": "iam/svc_backdoor", "ip": "203.0.113.44", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:44:00", "eventType": "ListQueues", "user": "dev_user_03", "resource": "sqs", "ip": "192.168.1.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:45:30", "eventType": "DescribeImages", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:47:00", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_001.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:47:28", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_002.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:47:55", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_003.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:48:22", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_004.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:48:50", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_005.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:49:17", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_006.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:49:44", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_007.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:50:11", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_008.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:50:38", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_009.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:51:05", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_010.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:51:32", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_011.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:52:00", "eventType": "GetObject", "user": "dev_user_04", "resource": "s3://data-lake/records_012.csv", "ip": "203.0.113.88", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:53:10", "eventType": "ListUsers", "user": "dev_user_03", "resource": "iam", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:54:20", "eventType": "ListRoles", "user": "dev_user_03", "resource": "iam", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:55:30", "eventType": "GetUser", "user": "dev_user_03", "resource": "iam/admin_user", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:56:40", "eventType": "ListPolicies", "user": "dev_user_03", "resource": "iam", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:57:50", "eventType": "GetAccountAuthorizationDetails", "user": "dev_user_03", "resource": "iam", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T08:59:00", "eventType": "ListAttachedUserPolicies", "user": "dev_user_03", "resource": "iam/dev_user_05", "ip": "203.0.113.150", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:00:00", "eventType": "DescribeInstances", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:00:15", "eventType": "ListBuckets", "user": "dev_user_01", "resource": "s3", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:00:30", "eventType": "DescribeSecurityGroups", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:00:45", "eventType": "DescribeVpcs", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:01:00", "eventType": "GetBucketAcl", "user": "dev_user_01", "resource": "s3://app-assets", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:01:15", "eventType": "ListObjects", "user": "dev_user_01", "resource": "s3://logs-bucket", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:01:30", "eventType": "DescribeSubnets", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:01:45", "eventType": "DescribeRouteTables", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:02:00", "eventType": "DescribeImages", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:02:15", "eventType": "DescribeKeyPairs", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:02:30", "eventType": "GetAccountSummary", "user": "dev_user_01", "resource": "iam", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:02:45", "eventType": "ListQueues", "user": "dev_user_01", "resource": "sqs", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:03:00", "eventType": "PutBucketPolicy", "user": "dev_user_01", "resource": "s3://app-assets", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:03:15", "eventType": "GetObject", "user": "dev_user_01", "resource": "s3://app-assets/index.html", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:03:30", "eventType": "PutObject", "user": "dev_user_01", "resource": "s3://app-assets/app.js", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:03:45", "eventType": "DescribeInstances", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:04:00", "eventType": "ListBuckets", "user": "dev_user_01", "resource": "s3", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:04:15", "eventType": "DescribeSecurityGroups", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:04:30", "eventType": "DescribeVpcs", "user": "dev_user_01", "resource": "ec2", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:04:45", "eventType": "GetBucketAcl", "user": "dev_user_01", "resource": "s3://logs-bucket", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:05:00", "eventType": "ConsoleLogin", "user": "root", "resource": "AWS Console", "ip": "192.168.10.1", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:07:30", "eventType": "UpdateAccountPasswordPolicy", "user": "root", "resource": "iam", "ip": "192.168.10.1", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:10:00", "eventType": "CreateVirtualMFADevice", "user": "root", "resource": "iam", "ip": "192.168.10.1", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:12:15", "eventType": "GetSecretValue", "user": "dev_user_02", "resource": "secretsmanager/db-password", "ip": "203.0.113.250", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:14:00", "eventType": "AssumeRole", "user": "dev_user_04", "resource": "iam/role/DevOpsAdminRole", "ip": "203.0.113.66", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:15:30", "eventType": "PutUserPolicy", "user": "dev_user_04", "resource": "iam/dev_user_04", "ip": "203.0.113.66", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:17:00", "eventType": "DescribeInstances", "user": "dev_user_02", "resource": "ec2", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:18:45", "eventType": "PutObject", "user": "dev_user_03", "resource": "s3://app-assets/config.yaml", "ip": "192.168.1.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:20:20", "eventType": "StopLogging", "user": "dev_user_05", "resource": "cloudtrail/main-trail", "ip": "203.0.113.44", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:22:40", "eventType": "DeleteTrail", "user": "dev_user_05", "resource": "cloudtrail/main-trail", "ip": "203.0.113.44", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:24:00", "eventType": "DeleteBucketPolicy", "user": "dev_user_02", "resource": "s3://app-assets", "ip": "203.0.113.175", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:25:30", "eventType": "DeactivateMFADevice", "user": "admin_user", "resource": "iam/admin_user", "ip": "203.0.113.188", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:27:00", "eventType": "DeleteAccessKey", "user": "dev_user_01", "resource": "iam/dev_user_01", "ip": "192.168.5.77", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:28:30", "eventType": "DescribeTrails", "user": "dev_user_01", "resource": "cloudtrail", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:30:00", "eventType": "GetBucketLogging", "user": "dev_user_05", "resource": "s3://prod-backup", "ip": "192.168.1.55", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:32:00", "eventType": "ListAccessKeys", "user": "admin_user", "resource": "iam", "ip": "192.168.3.11", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:34:15", "eventType": "DescribeInstances", "user": "dev_user_03", "resource": "ec2", "ip": "192.168.1.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:36:00", "eventType": "PutObject", "user": "dev_user_02", "resource": "s3://logs-bucket/audit.log", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:38:30", "eventType": "DescribeVpcs", "user": "dev_user_04", "resource": "ec2", "ip": "192.168.2.10", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:40:00", "eventType": "ConsoleLogin", "user": "dev_user_03", "resource": "AWS Console", "ip": "192.168.1.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:42:10", "eventType": "GetObject", "user": "dev_user_01", "resource": "s3://app-assets/index.html", "ip": "192.168.1.45", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:44:00", "eventType": "DescribeSecurityGroups", "user": "dev_user_05", "resource": "ec2", "ip": "192.168.1.55", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:46:30", "eventType": "ListObjects", "user": "dev_user_02", "resource": "s3://prod-backup", "ip": "192.168.1.22", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:48:00", "eventType": "DescribeKeyPairs", "user": "dev_user_03", "resource": "ec2", "ip": "192.168.1.33", "status": "SUCCESS" },
-    { "timestamp": "2024-01-15T09:50:00", "eventType": "ConsoleLogin", "user": "dev_user_04", "resource": "AWS Console", "ip": "192.168.2.10", "status": "SUCCESS" }
-  ]
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T08:33:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T08:34:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T08:35:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "PutBucketPolicy",
+    "eventTime": "2026-04-26T08:36:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T08:37:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T08:38:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T08:39:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T08:40:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeRouteTables",
+    "eventTime": "2026-04-26T08:41:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T08:42:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T09:00:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T09:01:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T09:02:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T09:03:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T09:04:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeRouteTables",
+    "eventTime": "2026-04-26T09:05:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T09:06:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T09:07:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeImages",
+    "eventTime": "2026-04-26T09:08:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T09:09:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T09:30:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T09:31:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetAccountSummary",
+    "eventTime": "2026-04-26T09:32:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListAccessKeys",
+    "eventTime": "2026-04-26T09:33:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListPolicies",
+    "eventTime": "2026-04-26T09:34:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T09:35:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T09:36:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T09:45:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T09:46:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T09:47:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T09:48:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T09:49:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T09:50:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListQueues",
+    "eventTime": "2026-04-26T09:51:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeImages",
+    "eventTime": "2026-04-26T09:52:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T10:00:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T10:02:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T10:04:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T10:06:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T10:08:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T10:10:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeRouteTables",
+    "eventTime": "2026-04-26T10:12:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T10:30:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T10:31:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T10:32:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T10:33:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T10:34:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T10:35:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T10:36:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T10:37:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T10:38:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T10:39:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T10:40:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T10:41:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T10:42:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T10:43:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:00:00",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:00:35",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:01:10",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:01:45",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:02:20",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:02:55",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:03:30",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:04:05",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:04:40",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:05:15",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:05:50",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:06:25",
+    "sourceIPAddress": "203.0.113.55",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:15:00",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:15:30",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:16:00",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:16:30",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:17:00",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:17:30",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:18:00",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:18:30",
+    "sourceIPAddress": "203.0.113.77",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T01:15:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T01:17:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T01:19:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T02:44:00",
+    "sourceIPAddress": "192.168.4.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T02:46:00",
+    "sourceIPAddress": "192.168.4.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T02:48:00",
+    "sourceIPAddress": "192.168.4.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T03:30:00",
+    "sourceIPAddress": "203.0.113.99",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T03:31:00",
+    "sourceIPAddress": "203.0.113.99",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T03:32:00",
+    "sourceIPAddress": "203.0.113.99",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T04:10:00",
+    "sourceIPAddress": "10.0.1.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T04:11:00",
+    "sourceIPAddress": "10.0.1.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:30:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T11:31:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T11:32:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T11:33:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T11:34:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:40:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T11:41:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T11:42:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T11:50:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Boto3/1.26.0 Python/3.10.0 automated-scanner-bot",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T11:51:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Boto3/1.26.0 Python/3.10.0 automated-scanner-bot",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T11:52:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Boto3/1.26.0 Python/3.10.0 automated-scanner-bot",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:00:00",
+    "sourceIPAddress": "203.0.113.111",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "wget/1.21.3",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T12:01:00",
+    "sourceIPAddress": "203.0.113.111",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "wget/1.21.3",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T12:02:00",
+    "sourceIPAddress": "203.0.113.111",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "wget/1.21.3",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:15:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:18:00",
+    "sourceIPAddress": "203.0.113.99",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:21:00",
+    "sourceIPAddress": "198.51.100.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:24:00",
+    "sourceIPAddress": "10.0.5.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T12:25:00",
+    "sourceIPAddress": "203.0.113.99",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T12:26:00",
+    "sourceIPAddress": "198.51.100.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T12:30:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T12:31:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListRoles",
+    "eventTime": "2026-04-26T12:32:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetUser",
+    "eventTime": "2026-04-26T12:33:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListPolicies",
+    "eventTime": "2026-04-26T12:34:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetAccountAuthorizationDetails",
+    "eventTime": "2026-04-26T12:35:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListAttachedUserPolicies",
+    "eventTime": "2026-04-26T12:36:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetAccountSummary",
+    "eventTime": "2026-04-26T12:37:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListGroupsForUser",
+    "eventTime": "2026-04-26T12:38:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListMFADevices",
+    "eventTime": "2026-04-26T12:39:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetLoginProfile",
+    "eventTime": "2026-04-26T12:40:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T13:00:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T13:00:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T13:00:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T13:00:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T13:01:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T13:01:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T13:01:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeRouteTables",
+    "eventTime": "2026-04-26T13:01:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeImages",
+    "eventTime": "2026-04-26T13:02:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T13:02:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetAccountSummary",
+    "eventTime": "2026-04-26T13:02:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListQueues",
+    "eventTime": "2026-04-26T13:02:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutBucketPolicy",
+    "eventTime": "2026-04-26T13:03:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T13:03:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T13:03:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T13:03:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T13:04:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T13:04:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T13:04:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T13:04:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T13:05:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeRouteTables",
+    "eventTime": "2026-04-26T13:05:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeImages",
+    "eventTime": "2026-04-26T13:05:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T13:05:45",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T13:06:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListRoles",
+    "eventTime": "2026-04-26T13:06:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetAccountAuthorizationDetails",
+    "eventTime": "2026-04-26T13:06:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T13:30:00",
+    "sourceIPAddress": "192.168.2.10",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T13:31:00",
+    "sourceIPAddress": "192.168.2.10",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T13:33:00",
+    "sourceIPAddress": "85.214.67.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T13:34:00",
+    "sourceIPAddress": "85.214.67.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T14:00:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:01:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T14:02:00",
+    "sourceIPAddress": "203.0.113.250",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:03:00",
+    "sourceIPAddress": "203.0.113.250",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T14:15:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:16:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:16:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:17:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:17:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:18:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:18:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:19:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:19:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:20:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:20:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:21:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:21:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:22:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:22:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:23:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T14:45:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T14:46:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:47:00",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:47:28",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:47:56",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:48:24",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:48:52",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:49:20",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:49:48",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:50:16",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:50:44",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:51:12",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:51:40",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:52:08",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:52:36",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:53:04",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T14:53:32",
+    "sourceIPAddress": "203.0.113.88",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T15:00:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T15:01:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T15:02:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T15:04:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T15:06:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T15:30:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T15:32:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "PutUserPolicy",
+    "eventTime": "2026-04-26T15:34:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "AssumeRole",
+    "eventTime": "2026-04-26T15:36:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T15:38:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T15:40:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T15:42:00",
+    "sourceIPAddress": "203.0.113.66",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T15:45:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T15:47:00",
+    "sourceIPAddress": "192.168.3.11",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T15:50:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T15:51:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T15:52:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T16:00:00",
+    "sourceIPAddress": "192.168.5.10",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T16:03:00",
+    "sourceIPAddress": "91.108.4.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T16:04:00",
+    "sourceIPAddress": "91.108.4.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T16:05:00",
+    "sourceIPAddress": "91.108.4.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T16:15:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T16:16:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T16:17:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T16:18:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T16:19:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "StopLogging",
+    "eventTime": "2026-04-26T16:20:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "DeleteTrail",
+    "eventTime": "2026-04-26T16:22:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "DeleteBucketPolicy",
+    "eventTime": "2026-04-26T16:24:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T16:30:00",
+    "sourceIPAddress": "203.0.113.188",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListMFADevices",
+    "eventTime": "2026-04-26T16:31:00",
+    "sourceIPAddress": "203.0.113.188",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "DeactivateMFADevice",
+    "eventTime": "2026-04-26T16:32:00",
+    "sourceIPAddress": "203.0.113.188",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "UpdateAccountPasswordPolicy",
+    "eventTime": "2026-04-26T16:34:00",
+    "sourceIPAddress": "203.0.113.188",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "DeleteVirtualMFADevice",
+    "eventTime": "2026-04-26T16:36:00",
+    "sourceIPAddress": "203.0.113.188",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T16:45:00",
+    "sourceIPAddress": "203.0.113.175",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DeactivateMFADevice",
+    "eventTime": "2026-04-26T16:47:00",
+    "sourceIPAddress": "203.0.113.175",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DeleteBucketPolicy",
+    "eventTime": "2026-04-26T16:49:00",
+    "sourceIPAddress": "203.0.113.175",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T17:00:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "UpdateAccountPasswordPolicy",
+    "eventTime": "2026-04-26T17:02:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "CreateVirtualMFADevice",
+    "eventTime": "2026-04-26T17:04:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T17:06:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T17:08:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T17:10:00",
+    "sourceIPAddress": "192.168.10.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T17:30:00",
+    "sourceIPAddress": "10.0.0.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T17:31:00",
+    "sourceIPAddress": "10.0.0.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T17:32:00",
+    "sourceIPAddress": "10.0.0.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "GetSecretValue",
+    "eventTime": "2026-04-26T17:33:00",
+    "sourceIPAddress": "10.0.0.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "StopLogging",
+    "eventTime": "2026-04-26T17:35:00",
+    "sourceIPAddress": "10.0.0.1",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T17:45:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetSecretValue",
+    "eventTime": "2026-04-26T17:47:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T17:49:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:00:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "AssumeRole",
+    "eventTime": "2026-04-26T18:02:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutUserPolicy",
+    "eventTime": "2026-04-26T18:04:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:15:00",
+    "sourceIPAddress": "5.188.62.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T18:16:00",
+    "sourceIPAddress": "5.188.62.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T18:17:00",
+    "sourceIPAddress": "5.188.62.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:20:00",
+    "sourceIPAddress": "95.217.44.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T18:21:00",
+    "sourceIPAddress": "95.217.44.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:25:00",
+    "sourceIPAddress": "176.58.100.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T18:26:00",
+    "sourceIPAddress": "176.58.100.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:30:00",
+    "sourceIPAddress": "142.250.80.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T18:31:00",
+    "sourceIPAddress": "142.250.80.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:35:00",
+    "sourceIPAddress": "34.102.136.180",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T18:36:00",
+    "sourceIPAddress": "34.102.136.180",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T18:45:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T18:46:00",
+    "sourceIPAddress": "203.0.113.44",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "GetSecretValue",
+    "eventTime": "2026-04-26T18:48:00",
+    "sourceIPAddress": "45.33.32.156",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T18:49:00",
+    "sourceIPAddress": "45.33.32.156",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T18:50:00",
+    "sourceIPAddress": "45.33.32.156",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T18:51:00",
+    "sourceIPAddress": "45.33.32.156",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListRoles",
+    "eventTime": "2026-04-26T18:52:00",
+    "sourceIPAddress": "45.33.32.156",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "python-requests/2.28.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:00:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:00:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:01:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:01:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:02:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:02:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T19:03:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:04:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:05:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:05:30",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:06:00",
+    "sourceIPAddress": "203.0.113.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:30:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T19:31:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:31:20",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:31:40",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T19:32:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T19:32:20",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T19:32:40",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T19:33:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T19:33:20",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T19:33:40",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T19:34:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:35:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T19:36:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:36:20",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:36:40",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T19:37:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T19:37:20",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T19:37:40",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T19:38:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T19:38:20",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T19:38:40",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T19:39:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:40:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T19:41:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:41:20",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:41:40",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T19:42:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T19:42:20",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T19:42:40",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T19:43:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T19:43:20",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T19:43:40",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T19:44:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:45:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T19:46:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:46:20",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:46:40",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T19:47:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T19:47:20",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T19:47:40",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T19:48:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T19:48:20",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T19:48:40",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T19:49:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T19:50:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T19:51:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T19:51:20",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T19:51:40",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T19:52:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T19:52:20",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T19:52:40",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T19:53:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T19:53:20",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ListObjects",
+    "eventTime": "2026-04-26T19:53:40",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeKeyPairs",
+    "eventTime": "2026-04-26T19:54:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:00:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:01:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T20:01:25",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T20:01:50",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T20:02:15",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T20:02:40",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T20:03:05",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T20:03:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T20:03:55",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:04:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:05:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T20:05:25",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T20:05:50",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T20:06:15",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T20:06:40",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T20:07:05",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T20:07:30",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T20:07:55",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:08:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:09:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T20:09:25",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T20:09:50",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T20:10:15",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T20:10:40",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T20:11:05",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T20:11:30",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T20:11:55",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:12:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:13:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T20:13:25",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T20:13:50",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T20:14:15",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T20:14:40",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T20:15:05",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T20:15:30",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T20:15:55",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:16:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:17:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T20:17:25",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T20:17:50",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T20:18:15",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T20:18:40",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T20:19:05",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSubnets",
+    "eventTime": "2026-04-26T20:19:30",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetBucketAcl",
+    "eventTime": "2026-04-26T20:19:55",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:30:00",
+    "sourceIPAddress": "172.16.5.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "GetSecretValue",
+    "eventTime": "2026-04-26T20:31:00",
+    "sourceIPAddress": "172.16.5.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T20:33:00",
+    "sourceIPAddress": "172.16.5.100",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "svc_account"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:35:00",
+    "sourceIPAddress": "172.31.0.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetSecretValue",
+    "eventTime": "2026-04-26T20:36:00",
+    "sourceIPAddress": "172.31.0.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T20:37:00",
+    "sourceIPAddress": "172.31.0.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:40:00",
+    "sourceIPAddress": "172.16.10.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "AssumeRole",
+    "eventTime": "2026-04-26T20:41:00",
+    "sourceIPAddress": "172.16.10.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ListRoles",
+    "eventTime": "2026-04-26T20:42:00",
+    "sourceIPAddress": "172.16.10.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_05"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T20:45:00",
+    "sourceIPAddress": "203.0.113.101",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetAccountSummary",
+    "eventTime": "2026-04-26T20:46:00",
+    "sourceIPAddress": "203.0.113.101",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListAccessKeys",
+    "eventTime": "2026-04-26T20:47:00",
+    "sourceIPAddress": "203.0.113.101",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:00:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:01:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:02:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:02:20",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:02:40",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:03:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:03:20",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:03:40",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:04:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:04:20",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:04:40",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:05:00",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:05:20",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:05:40",
+    "sourceIPAddress": "203.0.113.200",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "admin_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:30:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T21:31:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:31:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:32:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T21:32:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T21:33:00",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T21:33:30",
+    "sourceIPAddress": "192.168.1.45",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:33:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T21:34:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:34:30",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:35:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T21:35:30",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T21:36:00",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T21:36:30",
+    "sourceIPAddress": "192.168.1.22",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:36:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T21:37:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:37:30",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:38:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T21:38:30",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T21:39:00",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T21:39:30",
+    "sourceIPAddress": "192.168.1.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "dev_user_03"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:39:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T21:40:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:40:30",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:41:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T21:41:30",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T21:42:00",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T21:42:30",
+    "sourceIPAddress": "10.0.0.50",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_01"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T21:42:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeInstances",
+    "eventTime": "2026-04-26T21:43:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ListBuckets",
+    "eventTime": "2026-04-26T21:43:30",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "GetObject",
+    "eventTime": "2026-04-26T21:44:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "PutObject",
+    "eventTime": "2026-04-26T21:44:30",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeSecurityGroups",
+    "eventTime": "2026-04-26T21:45:00",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "DescribeVpcs",
+    "eventTime": "2026-04-26T21:45:30",
+    "sourceIPAddress": "10.0.0.55",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "ops_user_02"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T22:00:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListUsers",
+    "eventTime": "2026-04-26T22:01:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListRoles",
+    "eventTime": "2026-04-26T22:02:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetAccountAuthorizationDetails",
+    "eventTime": "2026-04-26T22:03:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListPolicies",
+    "eventTime": "2026-04-26T22:04:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "GetUser",
+    "eventTime": "2026-04-26T22:05:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ListGroupsForUser",
+    "eventTime": "2026-04-26T22:06:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T22:07:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T22:08:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T22:09:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "StopLogging",
+    "eventTime": "2026-04-26T22:10:00",
+    "sourceIPAddress": "203.0.113.150",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "curl/7.81.0",
+    "userIdentity": {
+      "userName": "dev_user_04"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T23:45:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T23:45:30",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T23:46:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "FAILURE",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "ConsoleLogin",
+    "eventTime": "2026-04-26T23:46:30",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "CreateUser",
+    "eventTime": "2026-04-26T23:47:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "AttachUserPolicy",
+    "eventTime": "2026-04-26T23:48:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "CreateAccessKey",
+    "eventTime": "2026-04-26T23:49:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "StopLogging",
+    "eventTime": "2026-04-26T23:50:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "DeleteTrail",
+    "eventTime": "2026-04-26T23:51:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  },
+  {
+    "eventName": "DeactivateMFADevice",
+    "eventTime": "2026-04-26T23:52:00",
+    "sourceIPAddress": "203.0.113.33",
+    "eventOutcome": "SUCCESS",
+    "userAgent": "Mozilla/5.0",
+    "userIdentity": {
+      "userName": "root"
+    }
+  }
+]

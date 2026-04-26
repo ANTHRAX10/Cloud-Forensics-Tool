@@ -9,6 +9,7 @@ public class LogEvent {
     private String eventOutcome;
     private String cloudProvider;
     private String region;
+    private String userAgent;
 
     // Enrichment fields (Populated by Detection Engine)
     private String severity;
@@ -19,7 +20,7 @@ public class LogEvent {
 
     public LogEvent(String eventTime, String eventName, UserIdentity userIdentity,
                     String sourceIPAddress, CloudResource resource, String eventOutcome,
-                    String cloudProvider, String region) {
+                    String cloudProvider, String region, String userAgent) {
         this.eventTime = eventTime;
         this.eventName = eventName;
         this.userIdentity = userIdentity;
@@ -28,6 +29,7 @@ public class LogEvent {
         this.eventOutcome = eventOutcome;
         this.cloudProvider = cloudProvider;
         this.region = region;
+        this.userAgent = userAgent;
     }
 
     public String getEventTime() { return eventTime; }
@@ -53,6 +55,9 @@ public class LogEvent {
 
     public String getRegion() { return region; }
     public void setRegion(String region) { this.region = region; }
+
+    public String getUserAgent() { return userAgent; }
+    public void setUserAgent(String userAgent) { this.userAgent = userAgent; }
 
     public String getSeverity() { return severity; }
     public void setSeverity(String severity) { this.severity = severity; }
