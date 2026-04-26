@@ -570,37 +570,98 @@ function buildMitreMatrix() {
 }
 
 // ===== EVIDENCE LOCKER =====
-function buildEvidenceLocker() {
-  const container = document.getElementById('evidenceList');
-  if (!container) return;
-  const evidenceItems = [
-    { name: 'cloudtrail-logs-2026-03-25.json', hash: sha256Fake('cloudtrail-logs'), type: 'Log Bundle', icon: 'fa-file-code', verified: true },
-    { name: 'iam-policy-snapshot.json', hash: sha256Fake('iam-policy'), type: 'Config Snapshot', icon: 'fa-shield-halved', verified: true },
-    { name: 's3-access-audit.csv', hash: sha256Fake('s3-access'), type: 'Audit Trail', icon: 'fa-table', verified: true },
-    { name: 'network-flow-capture.pcap', hash: sha256Fake('network-flow'), type: 'Network Capture', icon: 'fa-network-wired', verified: false }
-  ];
-  container.innerHTML = evidenceItems.map((e, i) => `
-    <div class="evidence-item" style="animation:slideUp 0.3s ease ${i * 0.08}s both">
-      <div class="evidence-icon"><i class="fa-solid ${e.icon}"></i></div>
-      <div class="evidence-info">
-        <div class="evidence-name">${e.name}</div>
-        <div class="evidence-hash">SHA-256: ${e.hash}</div>
-      </div>
-      <div class="evidence-actions">
-        <span class="integrity-badge ${e.verified ? 'verified' : 'unverified'}">
-          <i class="fa-solid ${e.verified ? 'fa-check-circle' : 'fa-question-circle'}"></i>${e.verified ? 'Verified' : 'Pending'}
-        </span>
-        <button class="btn btn-sm" onclick="showToast('Download started: ${e.name}','info')"><i class="fa-solid fa-download"></i></button>
-      </div>
-    </div>
-  `).join('');
+async function fetchEvidenceList() {
+  try {
+    const res = await fetch(`${API}/evidence`);
+    if (res.ok) {
+      const data = await res.json();
+      buildEvidenceLocker(data);
+    }
+  } catch (err) {
+    console.error('Failed to fetch evidence details', err);
+  }
 }
 
-function sha256Fake(input) {
-  let hash = 0;
-  for (let i = 0; i < input.length; i++) { hash = ((hash << 5) - hash) + input.charCodeAt(i); hash |= 0; }
-  const hex = Math.abs(hash).toString(16).padStart(8, '0');
-  return (hex.repeat(8)).substring(0, 64);
+function buildEvidenceLocker(evidenceData = []) {
+  const container = document.getElementById('evidenceTableBody');
+  if (!container) return;
+  if (!evidenceData.length) {
+    container.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:40px">No locked evidence found</td></tr>';
+    return;
+  }
+  
+  container.innerHTML = evidenceData.map((e, i) => `
+    <tr style="animation:fadeIn 0.3s ease ${i * 0.05}s both">
+      <td class="mono" style="font-size:0.85rem">${e.evidenceId}</td>
+      <td><span class="badge low">${e.dataType}</span></td>
+      <td class="mono" style="font-size:0.75rem;color:var(--text-secondary);max-width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${e.sha256Hash}">${e.sha256Hash}</td>
+      <td class="mono" style="font-size:0.8rem">${new Date(e.timestamp).toLocaleString()}</td>
+      <td id="integ-status-${e.evidenceId}"><span class="badge medium"><i class="fa-solid fa-spinner fa-spin"></i> Checking</span></td>
+      <td>
+        <button class="btn btn-sm" onclick="verifySingleEvidence('${e.evidenceId}')">Verify</button>
+      </td>
+    </tr>
+  `).join('');
+  
+  // Verify all implicitly when loading
+  verifyAllEvidence(false);
+}
+
+async function storeEvidenceBatch() {
+  showToast('Locking current evidence...', 'info');
+  try {
+    const res = await fetch(`${API}/evidence/store-batch`, { method: 'POST' });
+    if (res.ok) {
+      showToast(await res.text(), 'success');
+      fetchEvidenceList();
+    }
+  } catch (e) {
+    showToast('Failed to lock evidence', 'error');
+  }
+}
+
+async function verifyAllEvidence(showNotification = true) {
+  if (showNotification) showToast('Verifying integrity of all evidence...', 'info');
+  try {
+    const res = await fetch(`${API}/evidence/verify-all`);
+    if (res.ok) {
+      const results = await res.json();
+      results.forEach(r => {
+        const td = document.getElementById(`integ-status-${r.evidenceId}`);
+        if (td) {
+          if (r.valid) {
+            td.innerHTML = '<span class="badge low"><i class="fa-solid fa-check-circle"></i> Verified</span>';
+          } else {
+            td.innerHTML = '<span class="badge critical"><i class="fa-solid fa-triangle-exclamation"></i> Tampered</span>';
+          }
+        }
+      });
+      if (showNotification) showToast('Verification complete', 'success');
+    }
+  } catch (e) {
+    if (showNotification) showToast('Failed to verify evidence', 'error');
+  }
+}
+
+async function verifySingleEvidence(evidenceId) {
+  try {
+    const res = await fetch(`${API}/evidence/${evidenceId}/verify`);
+    if (res.ok) {
+      const r = await res.json();
+      const td = document.getElementById(`integ-status-${r.evidenceId}`);
+      if (td) {
+        if (r.valid) {
+          td.innerHTML = '<span class="badge low"><i class="fa-solid fa-check-circle"></i> Verified</span>';
+          showToast(`Evidence ${evidenceId} verified successfully`, 'success');
+        } else {
+          td.innerHTML = '<span class="badge critical"><i class="fa-solid fa-triangle-exclamation"></i> Tampered</span>';
+          showToast(`Integrity check failed for ${evidenceId}`, 'error');
+        }
+      }
+    }
+  } catch (e) {
+    showToast('Verification request failed', 'error');
+  }
 }
 
 // ===== REPORT BUILDER =====
@@ -619,16 +680,89 @@ function initReportBuilder() {
   `).join('');
 }
 
-function generateReport() {
+let currentReportId = null;
+
+async function generateReport() {
   const selected = document.querySelectorAll('.report-case-option.selected');
   if (selected.length === 0) { showToast('Please select at least one case', 'warning'); return; }
+  
+  const caseIds = Array.from(selected).map(el => el.getAttribute('data-case-id'));
+  
+  const includeTimeline = document.getElementById('optTimeline')?.checked ?? true;
+  const includeMitre = document.getElementById('optMitre')?.checked ?? true;
+  const includeEvidence = document.getElementById('optEvidence')?.checked ?? true;
+  const execOnly = document.getElementById('optExecOnly')?.checked ?? false;
+  
+  const reportType = execOnly ? 'EXECUTIVE' : 'COMBINED';
+
   showToast(`Generating report for ${selected.length} case(s)...`, 'info');
-  setTimeout(() => showToast('Report generated successfully!', 'success'), 2000);
+  
+  const btnGen = document.getElementById('btnGenReport');
+  if (btnGen) btnGen.disabled = true;
+
+  try {
+    const res = await fetch(`${API}/reports/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        caseIds: caseIds,
+        reportType: reportType,
+        includeTimeline: includeTimeline,
+        includeMitreMapping: includeMitre,
+        includeEvidenceHashes: includeEvidence,
+        investigatorName: "SOC Analyst", // default investigator
+        organizationName: "CloudForensics"
+      })
+    });
+    
+    if (!res.ok) throw new Error(`API Error: ${res.status}`);
+    
+    const data = await res.json();
+    currentReportId = data.reportId;
+    
+    showToast('Report generated successfully!', 'success');
+    
+    // Enable preview and download buttons
+    const btnPreview = document.getElementById('btnPreviewReport');
+    if (btnPreview) btnPreview.disabled = false;
+    const btnDownload = document.getElementById('btnDownloadReport');
+    if (btnDownload) btnDownload.disabled = false;
+    
+  } catch (err) {
+    console.error('Error generating report:', err);
+    showToast('Failed to generate report', 'error');
+  } finally {
+    if (btnGen) btnGen.disabled = false;
+  }
+}
+
+async function previewReport() {
+  if (!currentReportId) {
+    showToast('Please generate a report first', 'warning');
+    return;
+  }
+  showToast('Opening report preview...', 'info');
+  try {
+    const res = await fetch(`${API}/reports/${currentReportId}/pdf`);
+    if (!res.ok) throw new Error('Failed to load PDF');
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    window.open(url, '_blank');
+    // Note: The URL object isn't revoked immediately so the new tab can read it.
+  } catch (err) {
+    console.error('Preview error:', err);
+    showToast('Failed to preview PDF', 'error');
+  }
 }
 
 function downloadReport() {
+  if (!currentReportId) {
+    showToast('Please generate a report first', 'warning');
+    return;
+  }
   showToast('Preparing PDF download...', 'info');
-  setTimeout(() => showToast('Report downloaded', 'success'), 1500);
+  // The backend sets Content-Disposition: attachment, prompting a download
+  window.location.href = `${API}/reports/${currentReportId}/pdf`;
 }
 
 // ===== AUTO REFRESH =====
@@ -650,7 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   fetchData().then(() => {
     buildMitreMatrix();
-    buildEvidenceLocker();
+    fetchEvidenceList();
     initReportBuilder();
   });
   toggleAutoRefresh();

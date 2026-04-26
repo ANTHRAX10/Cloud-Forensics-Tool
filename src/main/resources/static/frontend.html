@@ -256,13 +256,36 @@
 
     <!-- ===== EVIDENCE LOCKER PAGE ===== -->
     <div id="evidence" class="page">
-      <div class="panel-header" style="margin-bottom:20px;font-size:1.1rem">
-        <span><i class="fa-solid fa-vault" style="color:var(--accent-green);margin-right:8px"></i>Secure Evidence Locker</span>
-        <span class="badge low"><i class="fa-solid fa-lock"></i> Chain of Custody Active</span>
+      <div class="panel-header" style="margin-bottom:20px;font-size:1.1rem;display:flex;justify-content:space-between;align-items:center;">
+        <div>
+          <span><i class="fa-solid fa-vault" style="color:var(--accent-green);margin-right:8px"></i>Secure Evidence Locker</span>
+          <span class="badge low" style="margin-left:8px"><i class="fa-solid fa-lock"></i> Chain of Custody Active</span>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="storeEvidenceBatch()"><i class="fa-solid fa-lock"></i> Lock Current Evidence</button>
+          <button class="btn" style="margin-left: 8px;" onclick="verifyAllEvidence()"><i class="fa-solid fa-shield-halved"></i> Verify Integrity</button>
+        </div>
       </div>
       <div id="evidenceList">
-        <div class="skeleton skeleton-row"></div>
-        <div class="skeleton skeleton-row"></div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Evidence ID</th>
+                <th>Type</th>
+                <th>SHA-256 Hash</th>
+                <th>Timestamp</th>
+                <th>Integrity</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="evidenceTableBody">
+              <tr><td colspan="6" style="text-align:center;color:var(--text-muted);padding:40px">
+                <div class="skeleton skeleton-text" style="width:60%;margin:0 auto"></div>
+              </td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -346,15 +369,16 @@
         <div class="report-section">
           <div class="report-section-title"><i class="fa-solid fa-sliders" style="color:var(--accent-purple);margin-right:6px"></i>Report Options</div>
           <div style="display:flex;gap:16px;flex-wrap:wrap">
-            <label class="auto-refresh-label"><input type="checkbox" checked> Include Timeline</label>
-            <label class="auto-refresh-label"><input type="checkbox" checked> Include MITRE Mapping</label>
-            <label class="auto-refresh-label"><input type="checkbox" checked> Include Evidence Hashes</label>
-            <label class="auto-refresh-label"><input type="checkbox"> Executive Summary Only</label>
+            <label class="auto-refresh-label"><input type="checkbox" id="optTimeline" checked> Include Timeline</label>
+            <label class="auto-refresh-label"><input type="checkbox" id="optMitre" checked> Include MITRE Mapping</label>
+            <label class="auto-refresh-label"><input type="checkbox" id="optEvidence" checked> Include Evidence Hashes</label>
+            <label class="auto-refresh-label"><input type="checkbox" id="optExecOnly"> Executive Summary Only</label>
           </div>
         </div>
         <div class="report-actions">
-          <button class="btn btn-primary" onclick="generateReport()"><i class="fa-solid fa-wand-magic-sparkles"></i>Generate Report</button>
-          <button class="btn" onclick="downloadReport()"><i class="fa-solid fa-download"></i>Download PDF</button>
+          <button class="btn btn-primary" id="btnGenReport" onclick="generateReport()"><i class="fa-solid fa-wand-magic-sparkles"></i>Generate Report</button>
+          <button class="btn" id="btnPreviewReport" onclick="previewReport()" disabled><i class="fa-solid fa-eye"></i>Preview PDF</button>
+          <button class="btn" id="btnDownloadReport" onclick="downloadReport()" disabled><i class="fa-solid fa-download"></i>Download PDF</button>
         </div>
       </div>
     </div>

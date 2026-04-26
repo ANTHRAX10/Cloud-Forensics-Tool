@@ -1,0 +1,21 @@
+{
+  "ConsoleLogin":          { "id": "T1078", "name": "Valid Accounts",                "tactic": "Initial Access" },
+  "CreateAccessKey":       { "id": "T1098.001", "name": "Account Manipulation: Access Keys", "tactic": "Persistence" },
+  "AttachUserPolicy":      { "id": "T1078.004", "name": "Valid Accounts: Cloud Accounts", "tactic": "Privilege Escalation" },
+  "PutUserPolicy":         { "id": "T1078.004", "name": "Valid Accounts: Cloud Accounts", "tactic": "Privilege Escalation" },
+  "AssumeRole":            { "id": "T1548", "name": "Abuse Elevation Control Mechanism", "tactic": "Privilege Escalation" },
+  "ListBuckets":           { "id": "T1526", "name": "Cloud Service Discovery",         "tactic": "Discovery" },
+  "ListUsers":             { "id": "T1087.004", "name": "Account Discovery: Cloud Account", "tactic": "Discovery" },
+  "DescribeInstances":     { "id": "T1580", "name": "Cloud Infrastructure Discovery",   "tactic": "Discovery" },
+  "DescribeSecurityGroups":{ "id": "T1580", "name": "Cloud Infrastructure Discovery",   "tactic": "Discovery" },
+  "GetObject":             { "id": "T1530", "name": "Data from Cloud Storage",          "tactic": "Collection" },
+  "PutObject":             { "id": "T1530", "name": "Data from Cloud Storage",          "tactic": "Collection" },
+  "DeleteBucket":          { "id": "T1485", "name": "Data Destruction",                  "tactic": "Impact" },
+  "TerminateInstances":    { "id": "T1529", "name": "System Shutdown/Reboot",            "tactic": "Impact" },
+  "StopInstances":         { "id": "T1529", "name": "System Shutdown/Reboot",            "tactic": "Impact" },
+  "CreateVpc":             { "id": "T1583.003", "name": "Acquire Infrastructure: Virtual Private Server", "tactic": "Resource Development" },
+  "ModifyInstanceAttribute":{ "id": "T1578", "name": "Modify Cloud Compute Infrastructure", "tactic": "Defense Evasion" },
+  "DeleteTrail":           { "id": "T1562.008", "name": "Impair Defenses: Disable Cloud Logs", "tactic": "Defense Evasion" },
+  "StopLogging":           { "id": "T1562.008", "name": "Impair Defenses: Disable Cloud Logs", "tactic": "Defense Evasion" },
+  "RunInstances":          { "id": "T1578.002", "name": "Modify Cloud Compute Infrastructure: Create Cloud Instance", "tactic": "Defense Evasion" }
+}
