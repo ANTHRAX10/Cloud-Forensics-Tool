@@ -2,6 +2,7 @@ package com.cloudforensics.service;
 
 import com.cloudforensics.model.Alert;
 import com.cloudforensics.model.LogEvent;
+import com.cloudforensics.repository.AlertRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,12 @@ import java.util.stream.Collectors;
 
 @Service
 public class DetectionRuleService {
+
+    private final AlertRepository alertRepository;
+
+    public DetectionRuleService(AlertRepository alertRepository) {
+        this.alertRepository = alertRepository;
+    }
 
     // ── Thresholds ──────────────────────────────────────────────────────────────
     private static final int FAILED_LOGIN_BURST_THRESHOLD = 3;
@@ -209,6 +216,9 @@ public class DetectionRuleService {
         // ── MEDIUM detections ───────────────────────────────────────────────────
         addFirstTimeSensitiveActionAlert(ctx, alerts);
         addNewIPDetectionAlert(ctx, alerts);
+
+        // Save detected alerts to MongoDB (alerts collection)
+        alertRepository.saveAll(alerts);
 
         return alerts;
     }

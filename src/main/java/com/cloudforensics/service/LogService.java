@@ -1,6 +1,7 @@
 package com.cloudforensics.service;
 
 import com.cloudforensics.model.LogEvent;
+import com.cloudforensics.repository.LogRepository;
 import com.cloudforensics.util.CloudLogParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -18,9 +19,11 @@ public class LogService {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
     private final DetectionRuleService detectionRuleService;
+    private final LogRepository logRepository;
 
-    public LogService(DetectionRuleService detectionRuleService) {
+    public LogService(DetectionRuleService detectionRuleService, LogRepository logRepository) {
         this.detectionRuleService = detectionRuleService;
+        this.logRepository = logRepository;
     }
 
     public List<LogEvent> getAllLogs() {
@@ -35,6 +38,9 @@ public class LogService {
                     .collect(Collectors.toList());
                     
             detectionRuleService.enrichLogs(parsedLogs);
+
+            // Save enriched logs to MongoDB (logs collection)
+            logRepository.saveAll(parsedLogs);
             
             return parsedLogs;
         } catch (Exception e) {

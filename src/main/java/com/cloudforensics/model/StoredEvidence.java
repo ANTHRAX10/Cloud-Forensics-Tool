@@ -1,30 +1,24 @@
 package com.cloudforensics.model;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.time.Instant;
 
-@Entity
-@Table(name = "stored_evidence")
+@Document(collection = "evidence")
 public class StoredEvidence {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
-    @Column(nullable = false, unique = true)
     private String evidenceId;
 
-    @Column(nullable = false)
     private String dataType; // E.g., LOG, ALERT, CASE
 
-    @Lob
-    @Column(columnDefinition = "TEXT", nullable = false)
     private String data; // The JSON string
 
-    @Column(nullable = false)
     private String sha256Hash;
 
-    @Column(nullable = false)
     private Instant timestamp;
 
     public StoredEvidence() {}
@@ -37,11 +31,11 @@ public class StoredEvidence {
         this.timestamp = timestamp;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -1,6 +1,11 @@
 package com.cloudforensics.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "alerts")
 public class Alert {
+    @Id
     private String id;
     private String timestamp;
     private String ruleName;

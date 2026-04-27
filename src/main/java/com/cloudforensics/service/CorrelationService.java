@@ -4,6 +4,7 @@ import com.cloudforensics.model.Alert;
 import com.cloudforensics.model.IncidentCase;
 import com.cloudforensics.model.LogEvent;
 import com.cloudforensics.model.LogResponseDTO;
+import com.cloudforensics.repository.CaseRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -18,6 +19,12 @@ public class CorrelationService {
             "CreateAccessKey", "ListBuckets", "ListUsers",
             "DescribeInstances", "GetObject", "DeleteBucket", "StopInstances"
     );
+
+    private final CaseRepository caseRepository;
+
+    public CorrelationService(CaseRepository caseRepository) {
+        this.caseRepository = caseRepository;
+    }
 
     public List<IncidentCase> correlateCases(List<LogEvent> logs, List<Alert> alerts) {
         List<IncidentCase> cases = new ArrayList<>();
@@ -80,6 +87,9 @@ public class CorrelationService {
                 ));
             }
         }
+
+        // Save correlated cases to MongoDB (cases collection)
+        caseRepository.saveAll(cases);
 
         return cases;
     }

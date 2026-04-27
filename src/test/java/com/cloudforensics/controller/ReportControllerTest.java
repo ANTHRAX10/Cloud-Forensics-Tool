@@ -6,8 +6,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.bean.MockBean;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -32,7 +34,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  *  3. GET /api/reports returns report metadata list
  *  4. GET /api/reports/{reportId}/pdf returns 404 for unknown report
  */
-@WebMvcTest(ReportController.class)
+@WebMvcTest(
+        controllers = ReportController.class,
+        excludeAutoConfiguration = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class}
+)
 class ReportControllerTest {
 
     @Autowired

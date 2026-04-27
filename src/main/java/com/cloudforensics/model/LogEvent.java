@@ -1,6 +1,12 @@
 package com.cloudforensics.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "logs")
 public class LogEvent {
+    @Id
+    private String id;
     private String eventTime;
     private String eventName;
     private UserIdentity userIdentity;
